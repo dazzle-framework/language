@@ -1,0 +1,39 @@
+{
+    "name": "dazzlesoftware/language",
+    "type": "library",
+    "description": "Dazzle Language Package",
+    "keywords": ["dazzle", "framework", "language"],
+    "homepage": "https://github.com/dazzle-framework/language",
+    "license": "GPL-3.0-or-later",
+    "require": {
+       "php": "^7.3.0",
+        "ext-xml": "*",
+        "dazzlesoftware/string": "^1.0"
+    },
+    "require-dev": {
+        "dazzlesoftware/dazzle-coding-standard": "^1.0",
+        "dazzlesoftware/di": "^1.0",
+        "dazzlesoftware/registry": "^1.0",
+        "dazzlesoftware/test": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "suggest": {
+        "dazzlesoftware/di": "To use the Language ServiceProviderInterface objects, install dazzlesoftware/di."
+    },
+    "autoload": {
+        "psr-4": {
+            "Dazzle\\Language\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dazzle\\Language\\UnitTests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-2.0-dev": "2.0-dev"
+        }
+    }
+}
